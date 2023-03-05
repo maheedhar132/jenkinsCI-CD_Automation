@@ -13,7 +13,7 @@ pipelineJob('jobname') {
           }
           branch('*/master')
         }
-        scriptPath('devops/ci/Jenkinsfile')
+        scriptPath('devops/cd/Jenkinsfile')
         }
     }
   }
