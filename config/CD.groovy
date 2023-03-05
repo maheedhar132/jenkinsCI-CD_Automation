@@ -8,7 +8,7 @@ pipelineJob('jobname') {
       scm {
         git {
           remote {
-            url('job_url')
+            url('https://joburl')
              credentials('credentialID')
           }
           branch('*/master')
