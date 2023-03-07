@@ -10,7 +10,7 @@ pipeline{
         }
         stage('create jenkins job using the generated xml'){
             steps{
-                BASIC_AUTH = ${JENKINS_USER}:$JENKINS_USER_API_TOKEN
+                BASIC_AUTH = "${JENKINS_USER}:$JENKINS_USER_API_TOKEN"
                 JENKINS_ADDRESS = "http://15.206.91.122:8080/"
                 script{
                     sh 'curl -X POST http://${BASIC_AUTH}@${JENKINS_ADDRESS}/createItem?name=my_pipeline \
