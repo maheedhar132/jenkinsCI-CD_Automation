@@ -14,7 +14,7 @@ pipeline{
         stage('create jenkins job using the generated xml'){
             steps{
                 script{
-                    sh 'curl -X POST http://${BASIC_AUTH}@${JENKINS_ADDRESS}/createItem?name=my_pipeline \
+                    sh 'curl -X POST http://sys_root:1105ac9004959feeec5c41209d50891737@15.206.91.122:8080/createItem?name=my_pipeline \
                         --header "Content-Type:text/xml" \
                         --data-binary @config.xml'
                 }
