@@ -4,7 +4,7 @@ pipeline{
         stage('convert job config to xml'){
             steps{
                 script{
-                    sh "java -jar artifacts\job-dsl-core-1.76-standalone.jar config\CD.groovy"
+                    sh "java -jar artifacts/job-dsl-core-1.76-standalone.jar config/CD.groovy"
                 }
             }
         }
