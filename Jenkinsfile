@@ -1,5 +1,5 @@
 
-def BASIC_AUTH = "${JENKINS_USER}:$JENKINS_USER_API_TOKEN"
+def BASIC_AUTH = "sys_root:1105ac9004959feeec5c41209d50891737"
 def JENKINS_ADDRESS = "http://15.206.91.122:8080/"
 pipeline{
     agent any
